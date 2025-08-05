@@ -1,6 +1,6 @@
 import 'dart:io'; //importa a biblioteca com as funoes da linguagem
 // extremamente importante void main -  função princiapl para rodar o codigo
-void main(){
+void main(){ //função principal
   print("Digite o seu nome");//a mensagem do print é o que vai aparecer no input - se nn tiver n da para ter um input
   String? nome = stdin.readLineSync();//para dar um input, pedindo o nome do usuario, ? serve para permitir que o input do usuario pode ser nulo
   String nome2 = nome!.toLowerCase();
