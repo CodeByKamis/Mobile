@@ -19,7 +19,7 @@ class ContaPoupanca extends Conta {
 
   ContaPoupanca({ double? investimento, required this.taxaRendimento, required String nome_titulo, required double saldoInicial}) : super( investimento: investimento, nome_titulo: nome_titulo, saldoInicial: saldoInicial);
 
-  void aplicarRendimento() {
+  void aplicarDindin() {
     double rendimento = saldoInicial * taxaRendimento;
     saldoInicial += rendimento;
     print("saldo + rendimento: R\$ ${saldoInicial.toStringAsFixed(2)}");
@@ -46,5 +46,5 @@ void main() {
   }
   print("Taxa de rendimento: ${contaPoupanca.taxaRendimento * 100}%");
 
-  contaPoupanca.aplicarRendimento();
+  contaPoupanca.aplicarDindin();
 }
